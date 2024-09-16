@@ -1,0 +1,54 @@
+body {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons button {
+  width: 49%;
+}
+
+input::-moz-placeholder {
+  color: rgb(173, 173, 192) !important;
+}
+
+input::placeholder {
+  color: rgb(173, 173, 192) !important;
+}
+
+input {
+  background-color: #777 !important;
+  color: white !important;
+}
+
+.alert {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 10px;
+  }
+  table th,
+  table td {
+    padding: 3px !important;
+  }
+  table .btn {
+    padding: 1px !important;
+    font-size: 9px !important;
+  }
+  .alert {
+    font-size: 14px;
+    padding: 5px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

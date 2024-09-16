@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS Operation</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="first-section my-4 text-center">
+            <h1 class="fs-3 fw-bolder mb-1">CRUDS System</h1>
+            <p>this system to manage cruds Operation</p>
+        </section>
+        <section class="second-section">
+            <input class="form-control mb-2" type="text"  id="name" placeholder="Product Name">
+            <div class="alert alert-danger alert-name" role="alert">
+                enter a valid name
+            </div>
+            <div class="price">
+                <input class="form-control mb-2" type="text"  id="price" placeholder="price">
+                <div class="alert alert-danger alert-price" role="alert">
+                    enter a valid price
+                </div>
+                <input class="form-control mb-2" type="text"  id="tax" placeholder="tax">
+                <div class="alert alert-danger alert-tax" role="alert">
+                    enter a valid tax
+                </div>
+            </div>
+            <input class="form-control mb-2" type="text"  id="count" placeholder="count">
+            <div class="alert alert-danger alert-count" role="alert">
+                enter a valid count
+            </div>
+            <input class="form-control mb-2" type="text"  id="catigory" placeholder="catigory">
+            <div class="alert alert-danger alert-catigory" role="alert">
+                enter a valid catigory
+            </div>
+            <button id="add" class="btn btn-success w-100 mb-2">add product</button>
+            <input class="form-control mb-2" type="search" placeholder="search by name" id="search">
+            <div class="buttons d-flex justify-content-between align-items-center">
+                <button class="btn btn-success  mb-2" id="searchByName">search by name</button>
+                <button class="btn btn-success  mb-2" id="searchByCatigory">search by catigory</button>
+            </div>
+            <div class="delete-all"></div>
+        </section>
+
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>tax</th>
+                    <th>Total</th>
+                    <th>catigory</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id="product-container"></tbody>
+        </table>
+
+    </div>
+    <script src="./bootstrap-5.3.3-dist/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
